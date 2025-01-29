@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.wheel-container {
+    position: relative;
+}
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(0deg);
+    transition: transform 3s ease-out;
+    background: conic-gradient(
+        red 0deg 36deg,
+        blue 36deg 72deg,
+        green 72deg 108deg,
+        yellow 108deg 144deg,
+        purple 144deg 180deg,
+        orange 180deg 216deg,
+        cyan 216deg 252deg,
+        pink 252deg 288deg,
+        lime 288deg 324deg,
+        white 324deg 360deg
+    );
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
